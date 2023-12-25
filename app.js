@@ -2,7 +2,7 @@ const express = require('express')
 
 const app = express()
 
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
   res.status(200)
   res.json({ message: 'This is the ENTRY POINT OF OUR BACKEND API!' })
 })
